@@ -11,10 +11,18 @@ int main() {
 
     while (1) {
         printf("Enter your guess: ");
-        scanf("%d", &guess);
+        if(scanf("%d", &guess) != 1) {
+            printf("Invalid input. Please enter a valid number.\n This attempt won't count.\n");
+            while(getchar() != '\n'); // Clear the input buffer
+            continue;
+        }
+        if (guess < 1 || guess > 100) {
+            printf("Please enter a number between 1 and 100.\n This attempt won't count.\n");
+            continue;
+        }
         attempts++;
 
-        if (guess == number) {
+         if (guess == number) {
             printf("Congratulations! You guessed the number in %d attempts.\n", attempts);
             break;
         } else if (guess < number) {
