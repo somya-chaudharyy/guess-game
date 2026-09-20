@@ -40,9 +40,8 @@ Congratulations! You guessed the number in 3 attempts.
 
 Some quick improvements planned for this game:
 
-1. Input validation — currently, entering a non-numeric value can cause unexpected behavior. Adding a check on the scanf return value would let the game reprompt on invalid input instead.
-2. Guess limit — add a maximum number of attempts (e.g. 10) so the game can end in a "loss" state, not just a win.
-3. Custom range — let the player choose the guessing range instead of it being fixed at 1–100.
+1. Guess limit — add a maximum number of attempts (e.g. 10) so the game can end in a "loss" state, not just a win.
+2. Custom range — let the player choose the guessing range instead of it being fixed at 1–100.
 
 ## License
 
